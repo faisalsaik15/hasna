@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IBN TAIMIYAH FOUNDATION ACADEMY INC.</title>
+    <style>
+        /* Main Layout */
+        .main {
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                "navbar"
+                "hero"
+                "boxcontainer"
+                "footer";
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: rgb(79, 208, 53);
+            grid-area: navbar;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 0;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar a {
+            color: rgb(9, 70, 9);
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            background-color: lightgreen;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: lightgreen;
+            grid-area: hero;
+            text-align: center;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            text-shadow: 5px 5px 5px green;
+        }
+
+        /* Box Container */
+        .boxcontainer {
+            background-color: beige;
+            grid-area: boxcontainer;
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping */
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            flex: 1 1 calc(33.33% - 20px); /* Three columns by default */
+            max-width: 400px;
+            height: auto;
+            background-color: burlywood;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            border-radius: 24px;
+            box-shadow: 5px 5px 10px brown;
+            padding: 20px;
+        }
+
+        .box:hover {
+            background-color: rgb(79, 208, 53);
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: lightgreen;
+            grid-area: footer;
+            text-align: center;
+            padding: 20px;
+        }
+
+        iframe {
+            height: 200px;
+            width: 100%;
+            border: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .box {
+                flex: 1 1 calc(50% - 20px); /* Two columns on tablets */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .box {
+                flex: 1 1 100%; /* Single column on small screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- Navbar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Student Portal</a></li>
+                <li><a href="#">News & Events</a></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>IBN TAIMIYAH FOUNDATION ACADEMY INC.</h1>
+            <p>Crossing Simuay Sultan Kudarat Mag., Del Norte.</p>
+            <p>Assalamo Alaykom Wa Rahmatullahi Wa Barakatuho!</p>
+            <p>
+                When you think you are at the end of something, you are basically at the beginning of something else. 
+                This institution has remained true to its aim “Dunya-Akhira Education," but we are starting now with a new and better direction 
+                that shall always embrace and adapt with current innovation, new technology, and appropriate methods to serve better our valued clientele.
+            </p>
+            <p>Murod Hasna</p>
+        </div>
+
+        <!-- Box Container -->
+        <div class="boxcontainer">
+            <div class="box">
+                <h2>MISSION</h2>
+                <p>
+                    Ibn Taimiyah Foundation Academy aims to produce enlightened, competitive, and well-balanced graduates committed 
+                    to promoting Islamic culture and becoming proactive members of society through the acquisition of holistic knowledge, 
+                    appropriate skills, and worthy attitudes and values.
+                </p>
+            </div>
+            <div class="box">
+                <h2>VISION</h2>
+                <p>
+                    Ibn Taimiyah Foundation Academy envisions being a leading Muslim private educational institution in the delivery of a quality 
+                    dunya-akhirat education and a potential partner in nation-building.
+                </p>
+            </div>
+            <div class="box">
+                <h2>GOALS</h2>
+                <ul>
+                    <li>To role model an Islamically-oriented school administration and management.</li>
+                    <li>To provide quality dunya-akhirat education from elementary to high school levels.</li>
+                    <li>To develop pupils and students upholding Tawhidic principles and culture in Islam.</li>
+                    <li>To develop and sustain capabilities of school administrators, teaching, and non-teaching personnel.</li>
+                    <li>To deliver relevant educational programs and services to all stakeholders.</li>
+                    <li>To establish and strengthen linkages with partners for academic and infrastructure development.</li>
+                    <li>To foster unity and cooperation among other schools for the advancement of Bangsamoro education.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7915.194773175552!2d124.30210230000003!3d7.286564899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32563d1bbddf8b5f%3A0x854e3c71cb0d9dda!2sIbn%20Taimiyah%20Foundation%20Academy!5e0!3m2!1sen!2sph!4v1737246323270!5m2!1sen!2sph" 
+                allowfullscreen 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
